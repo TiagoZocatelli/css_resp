@@ -42,9 +42,9 @@ $(document).ready(function() {
 
     $('.lista-armas button').click(function () {
         const destino = $('#contato'); 
-        const nomeVeiculo = $(this).parent().find('h3').text();
+        const nomeArma = $(this).parent().find('h3').text();
 
-        $('#veiculo-interesse').val(nomeVeiculo);
+        $('#arma-interesse').val(nomeArma);
         
         $('html, body').animate({ 
             scrollTop: destino.offset().top 
