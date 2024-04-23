@@ -33,6 +33,9 @@ header {
     z-index: 1;
 }
 
+header h1, a {
+    font-family: 'Bungee', sans-serif;
+}
 
 header ul {
     display: flex; 
@@ -206,16 +209,24 @@ footer li img {
     margin-bottom: 32px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+    
     header h1, a {
         text-align: center;
         margin: 0 auto;
+        margin-bottom: 20px;
+        height: 40px;
     }
     
+    header .container {
+        height: 120px;
+    }
+
+
     header {
         padding: 0px;
-        padding-top: 8px;
     }
+    
     .container {
         display: block;
         max-width: 80%;
