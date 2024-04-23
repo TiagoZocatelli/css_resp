@@ -1,191 +1,309 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #1b2838;
+    color: #fff;
 }
 
 .container {
     max-width: 1024px;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+html {
+    overflow-x: hidden;
+}
+
+header, footer {
+    background-color: #171a21;
+    padding-top: 16px;
+    color: #fff;
 }
 
 header {
-    padding: 16px 0 0;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 56px;
-}
-
-.submenu {
-    display: none;
-    border: 1px solid red;
-    background-color: #fff;
-    position: absolute;
+    position: sticky;
+    top: 0;
     left: 0;
-    width: 300px;
-    top: 100%;
+    z-index: 1;
 }
 
-.menu > li {
-    float: left;
+
+header ul {
+    display: flex; 
+}
+
+
+header > .container,
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    padding: 16px 0;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li{
     list-style: none;
-    padding: 16px;
-    border-top: 4px solid transparent;
-    position: relative;
+    display: inline;
+    margin-right: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.clear {
-    clear: both;
+nav li a{
+    color: #fff;
+    text-decoration: none;
 }
 
-.menu li:hover .submenu {
+.menu-hambuguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hambuguer span {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
     display: block;
+    margin-bottom: 4px;
 }
 
-.menu li:hover {
-    border-color: red;
-}
-
-.submenu li {
-    display: block;
-    padding: 8px;
-}
-
-.conteudo {
-    display: grid;
-    grid-template-columns: 70% 30%;
-}
-
-.noticia img {
-    max-width: 100%;
-}
-
-.destaque {
-    margin-bottom: 16px;
-}
-
-.destaque .noticia a {
+.container-flex {
     display: flex;
-    font-size: 2em;
 }
 
-.destaque .noticia img {
-    margin-right: 8px;
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
 }
 
 section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-armas {
+    flex-wrap: wrap;
+}
+
+.lista-armas li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 25px;
+}
+
+.lista-armas li img {
+    max-width: 100%;
+}
+
+.lista-armas li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #c7d5e0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #171a21;
+    color: #fff;
+}
+
+ .container li strong {
+    align-items: left;
+}
+
+.price {
+    margin: 16px;
+    display: block;
+}
+.price del {
+    color: #ccc;
+    font-size: 14px;
+}
+
+strong {
+    align-items: left;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+#hr_prod {
+    border: 1px solid #fff;
     margin-bottom: 32px;
 }
 
-aside {
-    padding-left: 40px;
-}
-
-aside .noticia {
-    margin-bottom: 24px;
-}
-
-.noticias {
-    display: grid;
-    grid-template-columns: repeat(3, 32.6%);
-    column-gap: 1%;
-    row-gap: 5%;
+#hr_sobre {
+    border: 1px solid #fff;
+    margin-bottom: 32px;
 }
 
 @media screen and (max-width: 767px) {
-    .conteudo{
-        display: block;
+    header h1, a {
+        text-align: center;
+        margin: 0 auto;
     }
-
+    
+    header {
+        padding: 0px;
+        padding-top: 8px;
+    }
     .container {
-        max-width: 90%;
-    }
-
-    .destaque .noticia a {
         display: block;
-        font-size: 1.5em;
-    }
-    
-    .destaque .noticia img {
-        margin-right: 0;
+        max-width: 80%;
+        margin: 0 auto; 
     }
 
-        
-    .noticias {
+    #sobre-a-loja img {
+        max-width: 100%;
+    }
+
+    .container .alinha ul {
         display: block;
-    }
-    
-    .noticia .noticia {
-        margin-bottom: 32PX;
+        align-items: center;
     }
 
-    aside {
-        padding-left: 0;
+    .alinha .item-central {
+        margin-right: 00px;
     }
 
-    header div.container {
-        flex-direction: column;
+    .lista-armas li {
+        max-width: 100%;
+        align-items: center;
     }
 
-    .submenu {
-        display: block;
-        width: 100%;
-        position: relative;
-        border: none;
+    .item-central {
+        margin: 0 auto;
     }
 
-    .menu {
-        display: none;
+    footer .container p {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 13px;
     }
 
-    .menu > li {
-        clear: both;
-    }
-    
-    .submenu li {
-        display: block;
-        padding: 8px;
-    }
-
-    .botao-menu {
-        display: flex;
+    footer ul ,.container-flex{
         justify-content: center;
-        margin-top: 16px;
-        padding-bottom: 16px;
     }
 
-    .botao-menu button {
-        padding: 8px;
+    header nav {
+        text-align: center; 
     }
+
+    header nav ul {
+        display: inline-block; 
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
     .container {
         max-width: 90%;
     }
 
-    .botao-menu {
-        display: none;
+    header ul {
+        display: flex; 
+        justify-content: space-around; 
     }
 
-    .destaque .noticia a {
-        font-size: 1.5em;
+    header ul li {
+        flex: 1; 
+        text-align: center; 
     }
 
-    .noticias {
-        grid-template-columns: repeat(2, 49%);
+    #sobre-a-loja .container-flex {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #sobre-a-loja img {
+        margin-right: 0; 
+        margin-bottom: 30px; 
+    }
+
+    #sobre-a-loja div {
+        text-align: center; 
+
+    #sobre-a-loja h2 {
+        margin-top: 0; 
+    }
+
+    #hr_sobre {
+        display: none; 
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .botao-menu {
-        display: none;
+    .container {
+        max-width: 90%;
     }
 }

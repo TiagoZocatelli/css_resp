@@ -1,139 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBAC News</title>
-    <link rel="stylesheet" href="./main.css">
+    <title>CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="icon" href="./icones/icons8-counter-strike-source-50.png" type="image/x-icon">
+
 </head>
+
 <body>
     <header>
+        <div class="container container-flex">
+            <h1>CSGO Skins</h1>
+            <nav>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#sobre-a-loja">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#Produtos">Produtos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="sobre-a-loja">
+        <div class="container container-flex">
+            <img src="./images/825902.jpg" alt="">
+            <div>
+                <h2 id="teste">Sobre CSGO Skins</h2>
+                <hr id="hr_sobre">
+                <p>
+                    Em nosso site, oferecemos uma rica variedade de recursos e informações sobre as skins de CS:GO. Desde guias detalhados sobre como adquirir skins até análises de mercado, estamos aqui para ajudá-lo a entender e navegar pelo vasto ecossistema de skins.
+                </p>
+                <p>
+                    CS:GO Skins é o seu destino definitivo para tudo relacionado às skins do jogo Counter-Strike: Global Offensive. Se você é um entusiasta de CS:GO ou simplesmente está curioso sobre o fascinante mundo das skins, você veio ao lugar certo.
+                </p>                
+            </div>
+        </div>
+    </section>
+
+    <section id="Produtos">
         <div class="container">
-            <h1>EBAC News</h1>
+            <h2>Produtos</h2>
+            <hr id="hr_prod">
+            <div class="alinha">
+                <ul class="container-flex lista-armas">
+                    <li>
+                        <img src="./images/arma1.jpg" alt="">
+                        <h3>P250</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetu  reprehenderit vero possimus mollitia cupi
+                        </p>
+                        <div class="price">
+                            <strong>
+                                R$ 999,00
+                            </strong>
+                        </div>
+                        <button type="button">Tenho interesse</button>
+                    </li>
+                    <li class="item-central">
+                        <img src="./images/arma2.jpg" alt="">
+                        <h3>P250</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetu  reprehenderit vero possimus mollitia cupi
+                        </p>
+                        <div class="price">
+                            <strong>
+                                R$ 999,00
+                            </strong>
+                        </div>
+                        <button type="button">Tenho interesse</button>
+                    </li>
+                    <li>
+                        <img src="./images/arma3.jpg" alt="">
+                        <h3>M4A4 (CT)</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetu  reprehenderit vero possimus mollitia cupi
+                        </p>
+                        <div class="price">
+                            <strong>
+                                R$ 999,00
+                            </strong>
+                        </div>
+                        <button type="button">Tenho interesse</button>
+                    </li>
+                    <li>
+                        <img src="./images/arma4.jpg" alt="">
+                        <h3>M4A1-S (CT)</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetu  reprehenderit vero possimus mollitia cupi
+                        </p>
+                        <div class="price">
+                            <strong>
+                                R$ 999,00
+                            </strong>
+                        </div>
+                        <button type="button">Tenho interesse</button>
+                    </li>
+                    <li class="item-central">
+                        <img src="./images/arma5.jpg" alt="">
+                        <h3>Cano Curto (TR)</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetu  reprehenderit vero possimus mollitia cupi
+                        </p>
+                        <div class="price">
+                            <strong>
+                                R$ 999,00
+                            </strong>
+                        </div>
+                        <button type="button">Tenho interesse</button>
+                    </li>
+                    <li>
+                        <img src="./images/arma6.jpg" alt="">
+                        <h3>CZ75-Auto</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetu  reprehenderit vero possimus mollitia cupi
+                        </p>
+                        <div class="price">
+                            <strong>
+                                R$ 999,00
+                            </strong>
+                        </div>
+                        <button type="button">Tenho interesse</button>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
             <form>
-                <input type="search" placeholder="Busque no site">
-                <button type="submit">Pesquisar</button>
+                <div class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-campo"> 
+                    <label for="veiculo-interesse">Veículo de interesse:</label>
+                    <input type="text" id="veiculo-interesse" name="veiculoDeInteresse">
+                </div>
+                <div class="form-campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
             </form>
         </div>
-        <div class="botao-menu">
-            <button type="button">Abrir Menu</button>
-        </div>
-        <nav class="container">
-            <ul class="menu">
-                <li>
-                    Esportes
-                    <ul class="submenu">
-                        <li>
-                            <a href="#">Futebol</a>
-                        </li>
-                        <li>
-                            <a href="#">Basquete</a>
-                        </li>
-                        <li>
-                            <a href="#">Formula 1</a>
-                        </li>
-                    </ul>
+    </section>
+    <footer>
+        <div class="container container-flex">
+            <p>
+                2024 &copy; CSGO Skins - Todos os direitos reservados
+            </p>
+            <ul class="container-flex">
+                <li class="final">
+                    <a href="#">
+                        <img src="./icones/facebook.png" alt="facebook">
+                    </a>
                 </li>
                 <li>
-                    Economia
-                    <ul class="submenu">
-                        <li>
-                            <a href="#">Bolsa de valores</a>
-                        </li>
-                        <li>
-                            <a href="#">Imposto de renda</a>
-                        </li>
-                        <li>
-                            <a href="#">Finanças Pessoais</a>
-                        </li>
-                    </ul>
+                    <a href="#">
+                        <img src="./icones/instagram.png" alt="instagram">
+                    </a>
+                </li>
+                <li>    
+                    <a href="#">
+                        <img src="./icones/youtube.png" alt="youtube">
+                    </a>
                 </li>
             </ul>
-            <div class="clear"></div>
-        </nav>
-    </header>
-    <div class="conteudo container">
-        <main>
-            <section class="destaque">
-                <h2>Em destaque</h2>
-                <article class="noticia">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/320x320">
-                        <h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias, quia repudiandae sed perferendis 
-                        </h3>
-                    </a>
-                </article>
-            </section>
-            <section>
-                <h2>Ultímas notícias</h2>
-                <div class="noticias">
-                    <article class="noticia">
-                        <a href="#">
-                            <img src="https://via.placeholder.com/320x320">
-                            <h3>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias, quia repudiandae sed perferendis 
-                            </h3>
-                        </a>
-                    </article>
-                    <article class="noticia">
-                        <a href="#">
-                            <img src="https://via.placeholder.com/320x320">
-                            <h3>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias, quia repudiandae sed perferendis 
-                            </h3>
-                        </a>
-                    </article>
-                    <article class="noticia">
-                        <a href="#">
-                            <img src="https://via.placeholder.com/320x320">
-                            <h3>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias, quia repudiandae sed perferendis 
-                            </h3>
-                        </a>
-                    </article>
-                </div>
-            </section>
-        </main>
-        <aside>
-            <section class="novidades">
-                <h2>Novidades</h2>
-                <article class="noticia">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/320x320">
-                        <h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias, quia repudiandae sed perferendis 
-                        </h3>
-                    </a>
-                </article>
-                <article class="noticia">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/320x320">
-                        <h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias, quia repudiandae sed perferendis 
-                        </h3>
-                    </a>
-                </article>
-                <article class="noticia">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/320x320">
-                        <h3>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias, quia repudiandae sed perferendis 
-                        </h3>
-                    </a>
-                </article>
-            </section>
-        </aside>
-    </div>
+        </div>
+    </footer>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.botao-menu button').click(function() {
-                $('.menu').slideToggle();
-            })
-        })
-    </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
